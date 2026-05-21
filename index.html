@@ -4,97 +4,94 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mohammed</title>
-
-<link rel="icon" type="image/png" href="logo.jpeg.png">
+<title>فلسطين الحرة</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-}
-
 body{
-background: linear-gradient(135deg,#050816,#0f172a,#111827);
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-color:white;
-overflow:hidden;
+    margin:0;
+    font-family:Arial;
+    background:
+    linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1521295121783-8a321d551ad2');
+    
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
 }
 
 .container{
-width:90%;
-max-width:400px;
-text-align:center;
-backdrop-filter: blur(15px);
-background: rgba(255,255,255,0.05);
-padding:40px 25px;
-border-radius:30px;
-box-shadow:0 0 30px rgba(0,0,0,0.5);
-border:1px solid rgba(255,255,255,0.1);
-animation:fade 1s ease;
+    padding:40px 20px;
 }
 
-@keyframes fade{
-from{
-opacity:0;
-transform:translateY(30px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-.profile{
-width:140px;
-height:140px;
-border-radius:50%;
-object-fit:cover;
-border:4px solid #38bdf8;
-box-shadow:0 0 25px #38bdf8;
-margin-bottom:20px;
+.logo{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    border:4px solid #00ff88;
+    object-fit:cover;
+    box-shadow:0 0 30px #00ff88;
 }
 
 h1{
-font-size:45px;
-margin-bottom:10px;
+    font-size:60px;
+    margin-top:20px;
+    color:#ffffff;
 }
 
 p{
-color:#cbd5e1;
-margin-bottom:30px;
-font-size:20px;
+    font-size:24px;
+    color:#ddd;
 }
 
-.btn{
-display:block;
-text-decoration:none;
-background:linear-gradient(45deg,#0ea5e9,#38bdf8);
-color:white;
-padding:18px;
-margin:15px 0;
-border-radius:18px;
-font-size:22px;
-font-weight:bold;
-transition:0.3s;
-box-shadow:0 10px 20px rgba(0,0,0,0.3);
+.buttons{
+    margin-top:40px;
 }
 
-.btn:hover{
-transform:scale(1.05);
-background:linear-gradient(45deg,#38bdf8,#0ea5e9);
+a{
+    display:block;
+    width:280px;
+    margin:15px auto;
+    padding:18px;
+    text-decoration:none;
+    color:white;
+    font-size:22px;
+    border-radius:15px;
+    transition:0.3s;
+    font-weight:bold;
 }
 
-.footer{
-margin-top:25px;
-font-size:14px;
-color:#94a3b8;
+.instagram{
+    background:#E1306C;
+}
+
+.youtube{
+    background:#ff0000;
+}
+
+.tiktok{
+    background:#111;
+    border:2px solid white;
+}
+
+a:hover{
+    transform:scale(1.08);
+}
+
+.counter{
+    margin-top:40px;
+    font-size:28px;
+    color:#00ff88;
+}
+
+audio{
+    margin-top:30px;
+    width:300px;
+}
+
+.flag{
+    font-size:70px;
 }
 
 </style>
@@ -104,29 +101,40 @@ color:#94a3b8;
 
 <div class="container">
 
-<img src="logo.jpeg.png" class="profile">
+<img src="logo.jpeg.png" class="logo">
 
-<h1>🚀 Mohammed</h1>
+<div class="flag">🇵🇸</div>
+
+<h1>فلسطين الحرة</h1>
 
 <p>
-تابعني على جميع منصات التواصل الاجتماعي
+القدس لنا وغزة صامدة ✌️
 </p>
 
-<a class="btn" href="https://www.instagram.com/palestine.russia?igsh=d3ZhNzZqenNmeHlt&utm_source=qr" target="_blank">
+<div class="buttons">
+
+<a class="instagram" href="https://www.instagram.com/palestine.russia?igsh=d3ZhNzZqenNmeHlt&utm_source=qr" target="_blank">
 Instagram
 </a>
 
-<a class="btn" href="https://youtube.com/@mohammed_elafifi?si=3PjYKSKseQ5CyIq2" target="_blank">
+<a class="youtube" href="https://youtube.com/@mohammed_elafifi?si=3PjYKSKseQ5CyIq2" target="_blank">
 YouTube
 </a>
 
-<a class="btn" href="https://www.tiktok.com/@mohammed.elafifi?_r=1&_t=ZS-96YHcAwtKjt" target="_blank">
+<a class="tiktok" href="https://www.tiktok.com/@mohammed.elafifi?_r=1&_t=ZS-96YHcAwtKjt" target="_blank">
 TikTok
 </a>
 
-<div class="footer">
-Made by Mohammed ✨
 </div>
+
+<div class="counter">
+👁️ عدد الزوار:
+<span id="visits">1024</span>
+</div>
+
+<audio controls autoplay loop>
+<source src="https://archive.org/download/palestine-national-anthem/palestine.mp3" type="audio/mpeg">
+</audio>
 
 </div>
 
